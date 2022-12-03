@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/tailwind.css" />
+    <title>Infinity Energy - Home</title>
+  </head>
+  <body class="bg-secondary-100">
+    <!-- 
+      Breve explicação do site 
+      (Missao, valor, visao)
+      Formulario para contato
+    -->
+    <header
+      id="top"
+      class="flex justify-between items-center px-12 py-3 bg-slate-100 drop-shadow-md"
+    >
+      <img class="w-6" src="img/Logo.svg" alt="" />
+      <ul class="uppercase font-bold text-x text-secondary-900 flex gap-8">
+        <li class="hover:text-complementary-700 transition">
+          <a href="index.html">Início</a>
+        </li>
+        <li class="hover:text-complementary-700 transition">
+          <a href="plans.html">Nossos Planos</a>
+        </li>
+        <li class="hover:text-complementary-700 transition">
+          <a href="aboveus.html">Sobre Nós</a>
+        </li>
+        <li class="hover:text-complementary-700 transition">
+          <a href="contact.html">Contato</a>
+        </li>
+        <li class="hover:text-complementary-700 transition">
+          <a href="expl.html">Energia solar</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="grid grid-cols-2 bg-white">
+        <div class="m-auto">
+          <h2 class="font-bold text-3xl text-complementary-600">
+            Veja a força das <br /><span class="text-gradient-900"
+              >fontes renováveis</span
+            >
+            Conheça seus Benefícios!
+          </h2>
+          <div class="flex gap-4 py-6">
+            <button
+              class="btn active:bg-screaming-green bg-green-mono-600 text-secondary-100"
+            >
+              <a href="plans.html"> Nossos Planos </a>
+            </button>
+            <button
+              class="btn active:bg-secondary-100 shadow-xl bg-secondary-300 text-secondary-900"
+            >
+              <a href="plans.html">Saiba Mais</a>
+            </button>
+          </div>
+        </div>
+        <img src="img/background.jpg" width="100%" height="500px" alt="" />
+      </section>
+
+      <section class="p-8">
+        <h2 class="uppercase text-3xl font-bold text-green-mono-600">
+          Sobre Nós
+        </h2>
+        <div class="flex justify-center gap-6 my-12">
+          <div
+            class="flex flex-col items-center text-center bg-white p-2 rounded-lg shadow-lg hover:-translate-y-2 transition transform"
+          >
+            <h3
+              class="uppercase font-semibold p-1 text-gradient-900 text-xl tracking-wider"
+            >
+              Missão
+            </h3>
+            <img class="py-2" src="img/target.svg" width="32px" alt="" />
+            <p class="font-sm text-secondary-500 max-w-xs">
+              Trazer um energia sustentavel até você
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center text-center bg-white p-2 rounded-lg shadow-lg hover:-translate-y-2 transition transform"
+          >
+            <h3
+              class="uppercase font-semibold p-1 text-gradient-900 text-xl tracking-wider"
+            >
+              Visão
+            </h3>
+            <img class="py-2" src="img/eye.svg" width="32px" alt="" />
+            <p class="font-sm text-secondary-500 max-w-xs">
+              Trasformar acessível o inacessível 
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center text-center bg-white p-2 rounded-lg shadow-lg hover:-translate-y-2 transition transform"
+          >
+            <h3
+              class="uppercase font-semibold p-1 text-gradient-900 text-xl tracking-wider"
+            >
+              Valores
+            </h3>
+            <img class="py-2" src="img/star.svg" width="32px" alt="" />
+            <p class="font-sm text-secondary-500 max-w-xs">
+              Alto comprometimento com o meio ambiente. 
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center py-1">
+          <button class="btn bg-gradient-500 active:bg-gradient-300">
+            Nos Conheça
+          </button>
+        </div>
+      </section>
+      <section class="p-8">
+        <h2 class="uppercase text-3xl mb-12 font-bold text-green-mono-600">
+          Faça um orçamento conosco:
+        </h2>
+        <form class="flex flex-col mx-auto max-w-md" action="" class="">
+          <label for="email">Email:</label>
+          <input
+            placeholder="Digite seu e-mail"
+            type="email"
+            id="email"
+            name="email"
+          />
+          <label for="email">Assunto: </label>
+          <input
+            placeholder="Digite o assunto da mensagem"
+            type="text"
+            id="subject"
+            name="subject"
+          />
+          <label for="email">Mensagem: </label>
+          <textarea
+            placeholder="Digite a sua mensagem"
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="btn bg-screaming-green my-6">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-white grid grid-cols-3 p-6 gap-2">
+      <div>
+        <img class="w-64 h-64" src="img/LogoCompleta.svg" alt="" />
+      </div>
+      <div></div>
+    </footer>
+  </body>
+</html>

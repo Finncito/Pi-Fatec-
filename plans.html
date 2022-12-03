@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/tailwind.css" />
+    <title>Infinity Energy - Home</title>
+  </head>
+  <body class="bg-secondary-100">
+    <!-- 
+      Breve explicação do site 
+      (Missao, valor, visao)
+      Formulario para contato
+    -->
+    <header
+      id="top"
+      class="flex justify-between items-center px-12 py-3 bg-slate-100 drop-shadow-md"
+    >
+      <img class="w-6" src="img/Logo.svg" alt="" />
+      <ul class="uppercase font-bold text-x text-secondary-900 flex gap-8">
+        <li class="hover:text-complementary-700 transition">
+          <a href="index.html">Início</a>
+        </li>
+        <li class="hover:text-complementary-700 transition">
+          <a href="plans.html">Nossos Planos</a>
+        </li>
+        <li class="hover:text-complementary-700 transition">
+          <a href="aboveus.html">Sobre Nós</a>
+        </li>
+        <li class="hover:text-complementary-700 transition">
+          <a href="contact.html">Contato</a>
+        </li>
+        <li class="hover:text-complementary-700 transition">
+          <a href="expl.html">Energia solar</a>
+        </li>
+      </ul>
+    </header>
+    <main class="py-8 px-12">
+      <h1 class="text-green-mono-800 uppercase pb-4 text-3xl font-bold">
+        Contrate algum dos nossos planos
+      </h1>
+      <p class="text-secondary-700 text-base pb-6 px-2">
+        Abaixo estão algumas das opções de pacotes para tornar seu negócio mais sutentavel e lucrativo.
+      </p>
+      <section class="flex justify-center gap-8">
+        <div
+          class="bg-white rounded-lg p-4 shadow-lg w-1/4 flex flex-col items-center hover:-translate-y-2 transition transform"
+        >
+          <h2 class="text-screaming-green font-bold text-2xl mb-3">Plano 1</h2>
+          <p class="text-secondary-500 font-semibold mb-1">
+            Básico
+          </p>
+          <ul class="list-disc ml-8 text-secondary-300 text-lg">
+            <li>Placas solares</li>
+            <li>Transformadores</li>
+           
+          </ul>
+          <button
+            class="btn mt-4 bg-gradient-900 text-secondary-100 active:bg-gradient-500"
+          >
+            Contrate
+          </button>
+        </div>
+        <div
+          class="bg-white rounded-lg p-4 shadow-lg w-1/4 flex flex-col items-center hover:-translate-y-2 transition transform"
+        >
+          <h2 class="text-screaming-green font-bold text-2xl mb-3">Plano 2</h2>
+          <p class="text-secondary-500 font-semibold mb-1">
+             Avançado
+          </p>
+          <ul class="list-disc ml-8 text-secondary-300 text-lg">
+            <li>Placas solares de maior capacidade</li>
+            <li>Armazenadores</li>
+            <li>Transformadores</li>
+            <li>Controle de voltagem</li>
+          </ul>
+          <button
+            class="btn mt-4 bg-gradient-900 text-secondary-100 active:bg-gradient-500"
+          >
+            Contrate
+          </button>
+        </div>
+        <div
+          class="bg-white rounded-lg p-4 shadow-lg w-1/4 flex flex-col items-center hover:-translate-y-2 transition transform"
+        >
+          <h2 class="text-screaming-green font-bold text-2xl mb-3">Plano 3</h2>
+          <p class="text-secondary-500 font-semibold mb-1">
+            Empresarial
+          </p>
+          <ul class="list-disc ml-8 text-secondary-300 text-lg">
+            <li>Placas solares</li>
+            <li>Transformadores</li>
+            <li>Armazenadores</li>
+            <li>Controle de voltagem</li>
+            <li>Distribuição de energia controlada</li>
+            <li>Manutenção mensal</li>
+          </ul>
+          <button
+            class="btn mt-4 bg-gradient-900 text-secondary-100 active:bg-gradient-500"
+          >
+            Contrate
+          </button>
+        </div>
+      </section>
+      <section class="p-8">
+        <h2 class="uppercase text-3xl mb-12 font-bold text-green-mono-600">
+          Faça um orçamento conosco:
+        </h2>
+        <form class="flex flex-col mx-auto max-w-md" action="" class="">
+          <label for="email">Email:</label>
+          <input
+            placeholder="Digite seu e-mail"
+            type="email"
+            id="email"
+            name="email"
+          />
+          <label for="email">Assunto: </label>
+          <input
+            placeholder="Digite o assunto da mensagem"
+            type="text"
+            id="subject"
+            name="subject"
+          />
+          <label for="email">Mensagem: </label>
+          <textarea
+            placeholder="Digite a sua mensagem"
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="btn bg-screaming-green my-6">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-white grid grid-cols-3 p-6 gap-2">
+      <div>
+        <img class="w-64 h-64" src="img/LogoCompleta.svg" alt="" />
+      </div>
+      <div></div>
+    </footer>
+  </body>
+</html>
